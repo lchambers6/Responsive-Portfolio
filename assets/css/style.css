@@ -2,12 +2,14 @@ body {
 	background-image: url(../images/cork-wallet.png);
 	margin: auto;
 }
+
 h1 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 35px;
 	font-weight: bold;
 	color: #ffffff;
 }
+
 h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 30px;
@@ -17,14 +19,15 @@ h2 {
 
 h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: #ffffff;
 }
+
 a {
 	text-decoration: none;
 	text-decoration: none;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: #777777;
 }
 
@@ -34,7 +37,7 @@ a:hover {
 
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: #777777;
 }
 
@@ -44,6 +47,7 @@ p {
 	width: auto;
 	border-bottom: 3px solid #cccccc;
 }
+
 .mainContainer {
 	width: 960px;
     margin: auto;
@@ -53,33 +57,42 @@ p {
 	background-color: #4aaaa5;
     float: left;
     text-align: center;
-   	padding:20px;
+	padding: 20px 15px 20px 15px;
 }
 
-#sideLinks{
+#sideLinks {
+	display: inline-flex;
+	float: right;
+	margin: 30px 5px 30px 5px;
+}
+
+.leftBorder {
 	border-right: 1px solid #cccccc;
 	float: right;
-	padding: 0px 7px 0px 0px;
-	margin: 25px 5px 25px 5px;
+	padding: 0px 7px 0px 7px;
 }
 
-#sideLinksNoBorder{
+#noBorder {
 	float: right;
-	padding: 0px 7px 0px 0px;
-	margin: 25px 5px 25px 5px;
+	padding: 0px 7px 0px 7px;
 }
 
 #main {
+	margin-top: 35px;
 	background-color: #ffffff;
 	width: 63%;
 	float: left;
 	padding: 20px;
 	margin-bottom: 35px;
+	border: 1px solid #dddddd;
 }
 
 #photo {
 	float:left;
-	width:35%;
+	margin-right: 15px;
+}
+
+#info {
 }
 
 #subHeader {
@@ -89,6 +102,7 @@ p {
 }
 
 #sidebar {
+	margin-top: 35px;
 	background-color: #ffffff;
 	width: 28%;
 	float: right;
@@ -114,11 +128,12 @@ p {
 	width: auto;
 	text-align: center;
 	width:100%;
-	padding: 25px;
+	padding: 25px 0px 25px 0px;
 	border-top: 5px solid #4aaaa5;
 	font-size: 12px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #ffffff;
+	margin-top: 15px
 }
 
 #icons {
@@ -179,4 +194,131 @@ input[type=submit] {
 	text-align: center;
 	font-size: 18px;
 	padding: 15px 0px 15px 0px;
+}
+
+@media screen and (max-width: 980px) {
+	.mainContainer {
+		width: 85%;
+	    margin: auto;
+	    padding: none;
+	}
+
+	#main {
+		width: 45%;
+	}
+
+	#sidebar {
+		width: 275px;
+	}
+
+	#icons {
+		margin: 5px;
+		position: relative;
+		right: -25px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.mainContainer {
+		width: 80%;
+	    margin: auto;
+	    padding: none;
+	}
+
+	#main {
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#sidebar {
+		float: left;
+		width: 100%;
+		text-align: left;
+		padding: none;
+		margin-top: 0px;
+		margin-bottom: 35px;
+		clear: both;
+		box-sizing: border-box;
+	}
+
+	#sideHead {
+		padding: 10px;
+		margin: 0px 15px 15px 15px;
+	}
+
+	.leftBorder {
+		border: none;
+		float: none;
+		padding: 0px 5px 0px 5px;
+	}
+
+	#noBorder {
+		float: none;
+		padding: 0px 5px 0px 5px;
+	}
+
+}	
+
+
+@media screen and (max-width: 640px) {
+	.mainContainer {
+		width: 100%;
+	    margin: auto;
+	    padding: none;
+	    text-align: center;
+	}
+
+	#sideLinks {
+		display: inline-flex;
+	    margin: 0px;
+	    box-sizing: border-box;
+		background-color: #ffffff;
+		float: none;
+		padding: 20px;
+	}
+
+	.leftBorder {
+		border: none;
+		float: left;
+		padding: 0px 15px 0px 15px;
+	}
+
+	#noBorder {
+		float: none;
+		padding: 0px 15px 0px 15px;
+	}
+
+	#header {
+	    width: 100%;
+	    margin: 0px 0px 0px 0px;
+	    box-sizing: border-box;
+	}
+
+	#main {
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: left;
+	}
+
+	#sidebar {
+		float: left;
+		width: 100%;
+		text-align: left;
+		padding: none;
+		margin-top: 0px;
+		margin-bottom: 35px;
+		clear: both;
+		box-sizing: border-box;
+	}
+
+	#sideHead {
+		padding: 10px;
+		margin: 0px 15px 15px 15px;
+	}
+	#whiteBar {
+		height: 130px;
+	}
 }
